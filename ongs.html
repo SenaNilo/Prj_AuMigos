@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ongs | Aumigos da Rua </title>
+    <link rel="stylesheet" href="css/ong.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="icon" type="image/png" href="imagens/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  </head>
+  <body>
+
+    <!-- navbar/header -->
+    <header>
+        <nav class="nav-ativo">
+            <a class="logo" href="index.html"><img src="imagens/logoam.png" alt="Logo Aumigos da Rua" loading="lazy" width="100">
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="info.html">Motivos para Doar</a></li>
+                <li id="destaque"><a href="ongs.html">Ongs</a></li>
+                <li><a href="devs.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+        </header>
+    <!-- fim do navbar/header-->
+
+
+  <p style="font-size: 20px; border-radius: 5px; font-weight: bold; padding:5px;"> Para você que procura Ongs para ajudar em Santos</p>
+
+    <div class="slider owl-carousel">
+      <div class="card">
+        
+        <div class="img"><img src="imagens/vivabicho.png" alt="foto de entrevistadora no Instituto Viva bicho"></div>
+        <div class="content">
+          <div class="title">Instituto Viva Bicho</div>
+          <!-- <div class="sub-title">Graphic Designer</div> -->
+          <p>  A Viva bicho possui três pilares: castração, doação responsável  e, conscientização da população, eles não tem abrigo próprio, porém você ainda pode doar.   </p>
+          <div class="btn">
+           <a href="http://ongvivabicho.com.br/"> <button>Veja mais</button> </a> 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="imagens/patinhas.png" alt="Imagem da frente da ONG de patinhas que brilham"></div>
+        <div class="content">
+          <div class="title"> Patinhas que Brilham </div>
+          <!-- <div class="sub-title">Web Developer</div> -->
+          <p>A Ongs patinhas que brilham tem o objetivo de resgatar e tratar animais. Você pode doar, porém você também pode
+            ajudar apenas dando carinho e atenção para os animais.
+          <div class="btn">
+           <a href="https://www.ongpatinhasquebrilham.com" target="_blank"><button>Veja mais</button> </a> 
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+   
+
+   
+
+    
+
+  </body>
+  <script>
+    $(".slider").owlCarousel({
+
+      autoplay: true,
+      autoplayTimeout: 10000, //2000ms = 2s;
+      autoplayHoverPause: true,
+    });
+  </script>
+</html>
