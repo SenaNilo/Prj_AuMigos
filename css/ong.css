@@ -1,0 +1,160 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0 auto;
+    padding:0 auto;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif, arial;
+}
+
+html,body{
+  display: grid; 
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #d9d9d9;
+    align-items: start; 
+    justify-items: stretch; 
+  }
+
+.slider{
+    max-width: 1100px;
+    display: flex;
+ 
+  }
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 3%; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .slider .card .img{
+    height: 200px;
+    width: 100%;
+    border-radius: 3%; 
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .card .content p{
+    text-align: justify;
+    margin: 10px 0;
+  }
+  .card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .card .content .btn button{
+    background: #b27634;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .card .content .btn button:hover{
+    transform: scale(0.9);
+  }
+  
+
+
+/* Header começo */
+header nav{
+    backdrop-filter: blur(4px);
+    padding: 20px 0 13px 0;
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    overflow: hidden;
+    /* position: fixed; */
+    z-index: 6;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    transition: 300ms linear;
+}
+.nav-ativo{
+    --second-color: rgb(50 33 12 / 58%);
+    filter: blur(0.1px);
+    background-color: var(--second-color);
+}
+
+a.logo:hover {
+    opacity: 0.7;
+    transition:0.3s;
+    
+}
+
+
+nav a {
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    float:center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 14px;
+    padding: 0 20px 0 20px;
+}
+.nav-list li::after{
+    animation: navhover 300ms ease-in;
+    transform: translateX(50%);
+}
+@keyframes navhover{
+    from{
+        opacity: 0;
+    }
+}
+.nav-list li:hover::after{
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+}
+
+#destaque::after{
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+    transition: 250ms ease-in all;
+}
+
+#destaque:hover::after{
+    transform: translate(35%, -1px);
+    width: 60%;
+}
+/* fim header e nav */
+
+
